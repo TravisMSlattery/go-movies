@@ -1,0 +1,15 @@
+<div class="container">
+<h1>Register</h1>
+    <form class="form-signin" #f="ngForm" (ngSubmit)="register(f)">
+        <!-- <input type="hidden" name="_csrf" /> -->
+        <div class="form-label-group">Email address
+            <input class="form-control" ngModel name="email" #email="ngModel" type="email" placeholder="Email address"/>
+            <label for="email"> </label></div>
+        <div class="form-label-group">Password
+            <input class="form-control" ngModel name="password" #password="ngModel" type="password" placeholder="Password" required="" />
+            <label for="password"> </label></div>
+        <div class="form-label-group">Full Name<input class="form-control" ngModel name="name" #name="ngModel" type="text" placeholder="Full Name" required="" />
+            <label for="name"> </label></div><button class="btn btn-lg btn-primary btn-block" type="submit">Sign up</button>
+        <div class="my-3 text-center">or <a class="show-signup" href="/users/login">Log in</a></div>
+    </form>
+</div>
